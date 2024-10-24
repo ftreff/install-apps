@@ -1,7 +1,7 @@
 # install-apps
-Downloads and Installs my most used packages and applications.
+Downloads and Installs the packages and applications I use most frequently.
 
-These are all the applications/packages I tipically download after a fresh linux installation.
+These are all applications/packages I typically download after a fresh linux installation.
 Instead of installing them one by one and trying to remember if i missed anything, I decided to write a script to run after I install a fresh copy of linux.
 
 GoTop
@@ -13,4 +13,5 @@ XMRig-MO
 Screen
 Libsensors5 - (for HTOP to show CPU temp)
 
-List is a work in progress, newpackages/applications will be added as i remember or need them.
+List is a work in progress, new packages/applications will be added as I remember or need them.
+Script will be written soon too.
