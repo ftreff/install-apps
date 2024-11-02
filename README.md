@@ -15,3 +15,9 @@ Libsensors5 - (for HTOP to show CPU temp)
 
 List is a work in progress, new packages/applications will be added as I remember or need them.
 Script will be written soon too.
+
+## Installation
+Install the list of common apps from `install-apps` without downloading/cloning the github repository
+```bash
+bash <(curl -s https://raw.githubusercontent.com/ftreff/install-apps/main/install-apps.sh)
+```
