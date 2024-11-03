@@ -5,14 +5,14 @@ These are all applications/packages I typically download after a fresh linux ins
 Instead of installing them one by one and trying to remember if i missed anything, I decided to write a script to run after I install a fresh copy of linux.
 
 `traceroute`<br>
-`GoTop`
-`Docker.io`
-`NeoFetch`
-`Screen`
-`Libsensors5` - (for HTOP to show CPU temp)
-`HTOP` - newest version (some distros bundle an outdated version).
-`XMRig`
-`XMRig-MO`
+`GoTop`<br>
+`Docker.io`<br>
+`NeoFetch`<br>
+`Screen`<br>
+`Libsensors5` - (for HTOP to show CPU temp)<br>
+`HTOP` - newest version (some distros bundle an outdated version).<br>
+`XMRig`<br>
+`XMRig-MO`<br>
 
 List is a work in progress, new packages/applications will be added as I remember or need them.
 Script will be written soon too.
