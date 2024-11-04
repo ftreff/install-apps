@@ -42,6 +42,19 @@ yes | sudo apt install screen
 echo "Installing LibSensors5..."
 yes | sudo apt install libsensors5
 #-----xmrig & xmrig-mo-----
+echo "Do you want to download and build XMRIG & XMRIG-MO?"
+
+read -p "Press 'y' to continue or 'n' to exit (y/n) " yn
+
+case $yn in 
+	y ) echo "ok, Installing XMRIG & XMRIG-MO...";;
+	n ) echo "ok, exiting...";
+		sleep 1
+		exit;;
+	* ) echo "invalid response, exiting";
+		sleep 1
+		exit 1;;
+esac
 cd
 echo "Downloading xmrig..."
 sleep .2
