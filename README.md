@@ -24,10 +24,10 @@ However the last few apps will ask again if you want to install or skip them, th
 `XMRig` and `XMRig-MO` - These take a little bit to build, and if you dont plan on mining XMR (Monero), there is no need to download and build them.<br>
 <br>
 List is a work in progress, new packages/applications will be added as I remember or need them.<br>
-Script `install.sh` is also a work in progress.<br>
+The script `install.sh` is also a work in progress.<br>
 <br>
-## Installation
-Install the list of common apps from `install-apps` without downloading/cloning the github repository.
+## Recommended Installation
+Execute `install.sh` from `install-apps` without downloading or cloning the github repository.
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ftreff/install-apps/main/install.sh)
 ```
