@@ -56,6 +56,7 @@ echo "This script will download / build / install various applications / package
 echo ""
 sleep 1
 echo "Current list of applications/packages:"
+echo ""
 sleep 1
 echo "    • Git"
 sleep .1
@@ -69,8 +70,8 @@ echo "    • Screen"
 sleep .1
 echo "    • LibSensors"
 sleep .1
-echo "    • Htop"
-sleep .1
+#echo "    • Htop"
+#sleep .1
 echo "    • Docker"
 sleep .1
 echo "    • Gimp"
@@ -281,6 +282,7 @@ else
 fi
 #Script is completed, now exiting
 sleep 1
+echo ""
 echo "    ▪   ▐ ▄ .▄▄ · ▄▄▄▄▄ ▄▄▄· ▄▄▌  ▄▄▌        "
 echo "    ██ •█▌▐█▐█ ▀. •██  ▐█ ▀█ ██•  ██•        "
 echo "    ▐█·▐█▐▐▌▄▀▀▀█▄ ▐█.▪▄█▀▀█ ██▪  ██▪        "
