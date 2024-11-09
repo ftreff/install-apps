@@ -4,6 +4,7 @@ Downloads and Installs the packages and applications I use most frequently.
 These are all applications/packages I typically download after a fresh linux installation.
 Instead of installing them one by one and trying to remember if i missed anything, I decided to write a script to run after I install a fresh copy of linux.
 
+`Git` (this only works if you run the script with the "bash <(curl -s ..." method below, otherwise you will need to install git prior to cloning the repo and then running install.sh)<br>
 `traceroute`<br>
 `GoTop`<br>
 `Docker.io`<br>
