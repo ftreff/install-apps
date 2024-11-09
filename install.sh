@@ -51,7 +51,7 @@ echo "        Download / Install / Build"
 echo ""
 echo ""
 sleep 1
-echo "This scrip will download, then build and/or install various applications."
+echo "This script will download, then build and/or install various applications."
 echo ""
 sleep 1
 echo "Current list of applications:"
@@ -76,14 +76,14 @@ echo "Gimp"
 sleep .1
 echo "XMRig"
 sleep .1
-echo "XMRig-MO (MoneroOcean Fork)"
+echo "XMRig-MO"
 echo ""
 sleep 1
 echo "Most apps will install once you press 'y', however a few will ask again if you want to install them."
 echo "The apps you have the option to skip are;"
-echo "Docker - if you dont plan on using docker, there is no need to install it."
-echo "Gimp - this is a GUI application, if your running CLI only, there is no reason to install this"
-echo "XMRig and XMRig-MO - these take a few minutes to build, if you dont plan on mining monero, there is no need to download and build them."
+echo "   -Docker - If you dont plan on using docker, there is no need to install it."
+echo "   -Gimp - This is a GUI application, if your running a Command Line Interface with no Graphical User Interface, there is no reason to install this as you cant run a GUI app in a CLI."
+echo "   -XMRig and XMRig-MO - these take a little bit of time to build, if you dont plan on mining XMR (Monero), there is no need to download and build these."
 read -p "Do you want to proceed (y/n) " yn
 
 case $yn in 
@@ -98,11 +98,23 @@ esac
 sleep 1
 cd
 #-----UPDATES-----
+echo "░▀█▀░█▀█░█▀▀░▀█▀░█▀█░█░░░█░░░▀█▀░█▀█░█▀▀"
+echo "░░█░░█░█░▀▀█░░█░░█▀█░█░░░█░░░░█░░█░█░█░█"
+echo "░▀▀▀░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀"
+echo "░░░░░░░█░█░█▀█░█▀▄░█▀█░▀█▀░█▀▀░█▀▀░░░░░░"
+echo "░░░░░░░█░█░█▀▀░█░█░█▀█░░█░░█▀▀░▀▀█░░░░░░"
+echo "░░░░░░░▀▀▀░▀░░░▀▀░░▀░▀░░▀░░▀▀▀░▀▀▀░░░░░░"
 echo "Downloading apt updates..."
 yes | sudo apt update
 echo "Preforming apt full upgrade..."
 yes | sudo apt full-upgrade
 #-----git-----
+echo "░▀█▀░█▀█░█▀▀░▀█▀░█▀█░█░░░█░░░▀█▀░█▀█░█▀▀"
+echo "░░█░░█░█░▀▀█░░█░░█▀█░█░░░█░░░░█░░█░█░█░█"
+echo "░▀▀▀░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀"
+echo "░░░░░░░░░░░░░░░█▀▀░▀█▀░▀█▀░░░░░░░░░░░░░░"
+echo "░░░░░░░░░░░░░░░█░█░░█░░░█░░░░░░░░░░░░░░░"
+echo "░░░░░░░░░░░░░░░▀▀▀░▀▀▀░░▀░░░░░░░░░░░░░░░"
 echo "Installing Git..."
 yes | sudo apt install git
 #-----traceroute-----
