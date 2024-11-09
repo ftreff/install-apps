@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "test5"
+
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣶⡎⠉⠀⠙⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠿⠉⠀⠀⠀⠀⠀⠈⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀"
@@ -82,10 +82,19 @@ echo "    • XMRig-MO"
 echo ""
 sleep 1
 echo "Most install automatically once you press 'y' to proceed, however the last few will ask again if you want to install them individually."
+sleep .5
 echo "The apps you have the option to skip are as follows:"
+sleep .3
 echo "    • Docker - [If you dont plan on using docker, there is no need to install it.]"
+sleep .1
 echo "    • Gimp - [This is a GUI application, if your running a Command Line Interface with no Graphical User Interface, there is no reason to install this as you cant run a GUI app in a CLI.]"
+sleep .1
 echo "    • XMRig and XMRig-MO - These take a little time to build, if you dont plan on mining XMR (Monero), there is no need to download and build these."
+sleep .1
+echo ""
+sleep .1
+echo ""
+sleep .5
 read -p "Do you want to proceed (y/n) " yn
 
 case $yn in 
@@ -256,10 +265,22 @@ if [ "$choice" = "y" ]; then
     sleep .2
     yes | sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
     sleep .2
+    echo "░░░█▀▄░█░█░▀█▀░█░░░█▀▄░▀█▀░█▀█░█▀▀░░░░";
+    echo "░░░█▀▄░█░█░░█░░█░░░█░█░░█░░█░█░█░█░░░░";
+    echo "░░░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀░▀░▀▀▀░░░░";
+    echo "░░░░░░░░░█░█░█▄█░█▀▄░▀█▀░█▀▀░░░░░░░░░░";
+    echo "░░░░░░░░░▄▀▄░█░█░█▀▄░░█░░█░█░░░░░░░░░░";
+    echo "░░░░░░░░░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░░░░░░░░";
     echo "Building xmrig..."
     sleep .2
     cd && cd xmrig && mkdir build && cd build && cmake .. && sudo make
     sleep .2
+    echo "░░░█▀▄░█░█░▀█▀░█░░░█▀▄░▀█▀░█▀█░█▀▀░░░░";
+    echo "░░░█▀▄░█░█░░█░░█░░░█░█░░█░░█░█░█░█░░░░";
+    echo "░░░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀░▀░▀▀▀░░░░";
+    echo "░░░█░█░█▄█░█▀▄░▀█▀░█▀▀░░░░░█▄█░█▀█░░░░";
+    echo "░░░▄▀▄░█░█░█▀▄░░█░░█░█░▄▄▄░█░█░█░█░░░░";
+    echo "░░░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░░░▀░▀░▀▀▀░░░░";
     echo "Building xmrig-mo..."
     sleep .2
     cd && cd xmrig-mo && mkdir build && cd build && cmake .. && sudo make
